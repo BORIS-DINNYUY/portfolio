@@ -38,7 +38,7 @@ header{
 
 .my_image{
     background: linear-gradient(
-        var(--color-primary), transparent
+        var(--color-primary), rgb(253, 51, 6)
     );
 
     position: absolute;

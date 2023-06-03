@@ -11,15 +11,15 @@
     background: linear-gradient(
         45deg,
         transparent,
-        var(--color-primary), transparent
+        var(--color-primary), rgb(224, 10, 10)
     );
     display: grid;
 }
 
 .about__me__image{
-    border-radius: 2rem;
+    border-radius: 60%;
     overflow: hidden;
-    transform: rotate(10deg);
+    transform: rotate(30deg);
     transition: var(--transition);
 }
 
@@ -34,7 +34,7 @@
 }
 
 .about__card{
-    background: var(--color-bg-variant);
+    background-color: rgb(105, 97, 133);
     border: 1px solid transparent;
     padding: 2rem;
     text-align: center;
@@ -43,13 +43,13 @@
 
 .about__card:hover{
     background: transparent;
-    border-color: var(--color-primary-variant);
+    border-color: rgb(144, 42, 56);
     cursor: default;
 }
 
 
 .about__icon{
-    color: var(--color-primary);
+    color: rgb(216, 210, 210);
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
@@ -65,7 +65,7 @@
 
 .about__me__content p{
     margin: 2rem 0 2.6rem;
-    color: var(--color-light);
+    color: rgb(135, 200, 135);
 }
 
 

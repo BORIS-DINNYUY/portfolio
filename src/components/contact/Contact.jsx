@@ -8,16 +8,15 @@ import emailjs from 'emailjs-com'
 const Contact = () => {
 const form = useRef();
 const sendEmail = (e) => {
-e.preventDefault();
-emailjs.sendForm('service_5vuauza', 'template_fdnnl56', form.current,
-'EmSdUNQzQuxkUqGWx')
-e.target.reset()
-.then((result) => {
-console.log(result.text)
-},(error) =>{
-console.log(error.text);
-});
-};
+    e.preventDefault();
+    const result = emailjs.sendForm('service_jllifzo', 'template_83k5ljk', form.current, 'Sw7WezvPAHodK_LY5');
+    e.target.reset();
+    result.then((data) => {
+    console.log(data.text);
+    }, (error) => {
+    console.log(error.text);
+    });
+    };
 return (
 <section id="contact">
 <h5>GET IN TOUCH WITH ME!!</h5>
@@ -49,6 +48,7 @@ target='_blank'>Whatsapp me</a>
 <form ref={form} onSubmit={sendEmail}>
 <input type="text" name='name' placeholder='full name' required/>
 <input type="email" name='email' placeholder='your email' required/>
+<input type="text" placeholder='Subject' name='subject' required />
 <textarea name="message" id="message" cols="30" rows="10"
 placeholder='your message' required></textarea>
 <button type="submit" className='btn btn-primary'>send message</button>

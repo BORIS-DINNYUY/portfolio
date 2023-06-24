@@ -6,8 +6,8 @@ import ListServices from './listServices'
 export const Services = () => {
   return (
     <section id="services">
-      <h5>What i offer</h5>
-      <h2>Services</h2>
+      <h5>WHAT I OFFER</h5>
+      <h2>SERVICES</h2>
       <h5>
       <ol>
     <li>Software Development</li>
